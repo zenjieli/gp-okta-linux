@@ -17,7 +17,7 @@ if [[ ! -f /etc/gp-okta.conf ]]; then
 fi
 
 # make sure we have /opt/gp-saml-gui/gp-saml-gui.py
-if [[ ! -f /opt/gp-saml-gui/gp-saml-gui.py ]]; then
+if [[ ! -f /opt/gp-saml-gui/gp_saml_gui.py ]]; then
     >&2 echo "Installation incomplete. Please install gp-saml-gui."
     exit 1
 fi
