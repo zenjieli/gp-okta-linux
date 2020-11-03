@@ -31,7 +31,7 @@ fi
 
 # start
 COOKIE=
-eval $( "/opt/gp-saml-gui/gp-saml-gui.py" -v "${VPN_SERVER}" )
+eval $( "/opt/gp-saml-gui/gp_saml_gui.py" -v "${VPN_SERVER}" )
 if ! [[ "${COOKIE}" = "" ]]; then
     echo "${COOKIE}" | pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY openconnect \
         --protocol=gp \
