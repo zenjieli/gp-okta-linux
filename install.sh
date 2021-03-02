@@ -19,6 +19,9 @@ function install_conf {
 function install_gp_saml_gui {
     if [ ! -d /opt/gp-saml-gui ]; then
         git clone https://github.com/dlenski/gp-saml-gui.git /opt/gp-saml-gui
+        
+        # Pulls a version supported by gp-okta-linux
+        git -C /opt/gp-saml-gui checkout c557c32
     fi
 }
 
